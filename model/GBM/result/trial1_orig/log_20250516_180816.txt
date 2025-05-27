@@ -1,0 +1,27 @@
+Starting 5-Fold Cross-Validation:
+
+Cross-Validation Results:
+[Fold 1] Accuracy: 0.6636, F1: 0.6565, AUC: 0.7204, Composite: 0.6802
+[Fold 2] Accuracy: 0.6540, F1: 0.6510, AUC: 0.7126, Composite: 0.6725
+[Fold 3] Accuracy: 0.6534, F1: 0.6524, AUC: 0.7052, Composite: 0.6703
+[Fold 4] Accuracy: 0.6627, F1: 0.6620, AUC: 0.7200, Composite: 0.6816
+[Fold 5] Accuracy: 0.6461, F1: 0.6424, AUC: 0.7057, Composite: 0.6647
+
+Average Composite Score: 0.6739
+
+Final Evaluation on Holdout Test Set
+Accuracy : 0.6610
+F1 Score : 0.6573
+ROC AUC : 0.7241
+Composite : 0.6808
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       0.66      0.67      0.66      2239
+     Class 1       0.66      0.66      0.66      2201
+
+    accuracy                           0.66      4440
+   macro avg       0.66      0.66      0.66      4440
+weighted avg       0.66      0.66      0.66      4440
+

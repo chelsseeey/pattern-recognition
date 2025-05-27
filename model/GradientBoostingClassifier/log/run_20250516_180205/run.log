@@ -1,0 +1,27 @@
+▶ GridSearchCV 시작…
+Best params: {'clf__learning_rate': 0.05, 'clf__max_depth': 5, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 1, 'clf__min_samples_split': 2, 'clf__n_estimators': 200, 'clf__subsample': 1.0} 
+
+5-Fold CV:
+[Fold 1] ACC=0.6619 | F1=0.6540 | AUC=0.7232
+[Fold 2] ACC=0.6568 | F1=0.6563 | AUC=0.7140
+[Fold 3] ACC=0.6498 | F1=0.6472 | AUC=0.7071
+[Fold 4] ACC=0.6669 | F1=0.6682 | AUC=0.7254
+[Fold 5] ACC=0.6532 | F1=0.6500 | AUC=0.7106
+Composite mean: 0.6763
+
+Hold-out Test:
+ACC: 0.6660
+F1: 0.6636
+AUC: 0.7300
+Composite: 0.6865
+
+Classification report
+               precision    recall  f1-score   support
+
+           0       0.67      0.67      0.67      2239
+           1       0.66      0.66      0.66      2201
+
+    accuracy                           0.67      4440
+   macro avg       0.67      0.67      0.67      4440
+weighted avg       0.67      0.67      0.67      4440
+
