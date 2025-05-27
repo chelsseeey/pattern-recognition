@@ -1,0 +1,19 @@
+5-Fold Stacking CV:
+[Fold 1] Acc: 0.6630, F1: 0.6499, AUC: 0.7155
+[Fold 2] Acc: 0.6503, F1: 0.6445, AUC: 0.7114
+[Fold 3] Acc: 0.6394, F1: 0.6333, AUC: 0.6948
+[Fold 4] Acc: 0.6475, F1: 0.6433, AUC: 0.7058
+[Fold 5] Acc: 0.6419, F1: 0.6341, AUC: 0.6977
+Avg Composite: 0.6648
+Holdout - Acc: 0.6649, F1: 0.6560, AUC: 0.7222, Comp: 0.6810
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.66      0.68      0.67      2239
+           1       0.67      0.64      0.66      2201
+
+    accuracy                           0.66      4440
+   macro avg       0.66      0.66      0.66      4440
+weighted avg       0.66      0.66      0.66      4440
+
