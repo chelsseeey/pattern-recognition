@@ -1,0 +1,7 @@
+Best params      : {'random_strength': 1, 'learning_rate': 0.1, 'l2_leaf_reg': 1, 'depth': 4, 'colsample_bylevel': 1.0, 'border_count': 128, 'bagging_temperature': 2.0}
+Best CV ROC AUC  : 0.6706
+Best iteration   : 4
+Test Accuracy    : 0.6340
+Test F1 Score    : 0.6370
+Test ROC AUC     : 0.6847
+Test Composite   : 0.6519

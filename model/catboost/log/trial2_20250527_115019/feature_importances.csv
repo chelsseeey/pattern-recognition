@@ -1,0 +1,21 @@
+Feature Id,Importances
+kw_avg_avg,35.29284789386874
+data_channel_Entertainment,9.86279492334102
+self_reference_min_shares,8.959908626369312
+kw_max_avg,5.746649865284477
+self_reference_max_shares,5.547055701350339
+data_channel_Tech,5.526309644913814
+data_channel_Social Media,5.421746891371503
+LDA_02,5.236543120118681
+weekday_Saturday,5.139314441648846
+LDA_04,3.8208470693231114
+kw_max_max,3.224817884410898
+kw_min_min,2.954885259378784
+LDA_00,2.8521684010526824
+num_videos,0.414110277567824
+n_tokens_title,0.0
+n_tokens_content,0.0
+n_unique_tokens,0.0
+n_non_stop_words,0.0
+n_non_stop_unique_tokens,0.0
+num_hrefs,0.0

@@ -1,0 +1,5 @@
+▶ VotingClassifier (soft) 결과
+Accuracy : 0.6673
+F1 Score : 0.6650
+ROC AUC  : 0.7276
+Composite: 0.6867
