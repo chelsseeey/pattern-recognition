@@ -1,0 +1,41 @@
+2025-05-31 05:25:12,463 [INFO] ===== 스크립트 시작 =====
+2025-05-31 05:25:12,466 [INFO] CUDA_VISIBLE_DEVICES=CPU
+2025-05-31 05:25:12,468 [INFO] 1) Loading data from: /content/drive/MyDrive/Colab Notebooks/패턴인식/data/train.csv
+2025-05-31 05:25:13,253 [INFO]    - Train shape: (17760, 49), Validation shape: (4440, 49)
+2025-05-31 05:25:13,471 [INFO] scale_pos_weight=1.017  (neg=8957, pos=8803)
+2025-05-31 05:25:13,478 [INFO] Optuna search (30 trials) 시작
+2025-05-31 05:31:49,736 [INFO] Optuna best params: {'learning_rate': 0.09457030432600626, 'depth': 7, 'l2_leaf_reg': 6.919276441100074, 'border_count': 54, 'bagging_temperature': 0.07548866736054105, 'random_strength': 0.32960630115388584, 'colsample_bylevel': 0.6082356565858577}  |  best Composite=0.6914
+2025-05-31 05:31:59,872 [INFO] Best iteration via early-stopping: 126
+2025-05-31 05:32:00,374 [INFO] 6) Hold-out Validation Performance 계산 중...
+2025-05-31 05:32:00,405 [INFO] Hold-out Acc=0.6739  Precision=0.6686  Recall=0.6783  F1=0.6734  AUC=0.7268
+2025-05-31 05:32:00,407 [INFO]        MCC=0.3478  BalAcc=0.6739  LogLoss=0.6094  Composite=0.6914  Top-220 Precision=0.8818
+2025-05-31 05:32:00,594 [INFO] 
+Classification Report (Hold-out):
+              precision    recall  f1-score   support
+
+ Not Popular       0.68      0.67      0.67      2239
+     Popular       0.67      0.68      0.67      2201
+
+    accuracy                           0.67      4440
+   macro avg       0.67      0.67      0.67      4440
+weighted avg       0.67      0.67      0.67      4440
+
+2025-05-31 05:32:00,996 [INFO] 7) 5-Fold Cross-Validation 시작...
+2025-05-31 05:32:03,943 [INFO] Fold 1 ➔ Acc=0.6672  F1=0.6650  ROC_AUC=0.7275  Prec=0.6635  Recall=0.6665  BalAcc=0.6672  MCC=0.3344  LogLoss=0.6103  Top-176_Prec=0.8466
+2025-05-31 05:32:06,849 [INFO] Fold 2 ➔ Acc=0.6495  F1=0.6510  ROC_AUC=0.7108  Prec=0.6425  Recall=0.6597  BalAcc=0.6496  MCC=0.2992  LogLoss=0.6205  Top-176_Prec=0.8864
+2025-05-31 05:32:10,147 [INFO] Fold 3 ➔ Acc=0.6433  F1=0.6426  ROC_AUC=0.7026  Prec=0.6385  Recall=0.6468  BalAcc=0.6433  MCC=0.2867  LogLoss=0.6272  Top-176_Prec=0.8182
+2025-05-31 05:32:14,656 [INFO] Fold 4 ➔ Acc=0.6610  F1=0.6646  ROC_AUC=0.7164  Prec=0.6523  Recall=0.6775  BalAcc=0.6612  MCC=0.3225  LogLoss=0.6180  Top-176_Prec=0.8693
+2025-05-31 05:32:17,597 [INFO] Fold 5 ➔ Acc=0.6574  F1=0.6577  ROC_AUC=0.7141  Prec=0.6516  Recall=0.6638  BalAcc=0.6574  MCC=0.3149  LogLoss=0.6175  Top-176_Prec=0.8920
+2025-05-31 05:32:17,600 [INFO] 
+=== 5-Fold CV Results (Mean ± 2*STD) ===
+2025-05-31 05:32:17,601 [INFO] Accuracy:          0.6557 (+/- 0.0169)
+2025-05-31 05:32:17,603 [INFO] F1 Score:          0.6562 (+/- 0.0170)
+2025-05-31 05:32:17,605 [INFO] ROC AUC:           0.7143 (+/- 0.0162)
+2025-05-31 05:32:17,606 [INFO] Precision:         0.6497 (+/- 0.0174)
+2025-05-31 05:32:17,608 [INFO] Recall:            0.6628 (+/- 0.0199)
+2025-05-31 05:32:17,609 [INFO] Balanced Accuracy: 0.6557 (+/- 0.0169)
+2025-05-31 05:32:17,612 [INFO] Log Loss:          0.6187 (+/- 0.0109)
+2025-05-31 05:32:17,613 [INFO] MCC:               0.3115 (+/- 0.0338)
+2025-05-31 05:32:17,614 [INFO] Top-10% Precision: 0.8625 (+/- 0.0545)
+2025-05-31 05:32:17,616 [INFO] 8) Feature Importance 저장 중...
+2025-05-31 05:32:17,633 [INFO]    Permutation Importance 계산 중...
